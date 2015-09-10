@@ -8,6 +8,7 @@ import tkinter as tk
 main = PanedWindow()
 main.pack(fill = BOTH, expand = 1)
 sec = PanedWindow(main, orient = VERTICAL )
+tri = PanedWindow(main, orient = VERTICAL )
 
 ratings = LabelFrame( main, text="Character Ratings", padx = 5, pady = 5 )
 ratings.pack( padx = 10, pady = 10 )
@@ -22,9 +23,11 @@ bonuses = LabelFrame( main, text="Extra Bonuses", padx = 5, pady = 5 )
 bonuses.pack( padx = 10, pady = 10 )
 
 main.add(ratings)
-main.add(attributes)
+#main.add(attributes)
 main.add(sec)
-sec.add(synergies)
+main.add(tri)
+sec.add(attributes)
+tri.add(synergies)
 sec.add(bonuses)
 
 #Character Ratings 
@@ -142,8 +145,45 @@ brutdmgen = Entry( ratings, width = 10, justify = CENTER )
 brutdmgen.insert( 0, "0" )
 brutdmgen.grid( column = 2, row = 20 )
 
+#Character Attributes
 group2toplabel = Label( attributes, text="Enter your Character's Attributes" )
-group2toplabel.pack()
+group2toplabel.grid( column = 1, row = 1 )
+#Durability
+durlab = Label( attributes, text="Durability: " )
+durlab.grid( column = 1, row = 2 )
+durent = Entry( attributes, width = 10, justify = CENTER )
+durent.insert( 0, "0" )
+durent.grid( column = 2, row = 2 )
+#Strength
+strlab = Label( attributes, text="Strength: " )
+strlab.grid( column = 1, row = 3 )
+strent = Entry( attributes, width = 10, justify = CENTER )
+strent.insert( 0, "0" )
+strent.grid( column = 2, row = 3 )
+#Fighting
+figlab = Label( attributes, text="Fighting: " )
+figlab.grid( column = 1, row = 4 )
+figent = Entry( attributes, width = 10, justify = CENTER )
+figent.insert( 0, "0" )
+figent.grid( column = 2, row = 4 )
+#Speed
+spelab = Label( attributes, text="Speed: " )
+spelab.grid( column = 1, row = 5 )
+speent = Entry( attributes, width = 10, justify = CENTER )
+speent.insert( 0, "0" )
+speent.grid( column = 2, row = 5 )
+#Energy
+enelab = Label( attributes, text="Energy: " )
+enelab.grid( column = 1, row = 6 )
+eneent = Entry( attributes, width = 10, justify = CENTER )
+eneent.insert( 0, "0" )
+eneent.grid( column = 2, row = 6 )
+#Intelligence
+intlab = Label( attributes, text="Intelligence: " )
+intlab.grid( column = 1, row = 7 )
+intent = Entry( attributes, width = 10, justify = CENTER )
+intent.insert( 0, "0" )
+intent.grid( column = 2, row = 7 )
 
 group3toplabel = Label( synergies, text="Please pick only 10" )
 group3toplabel.pack()
