@@ -186,11 +186,17 @@ intent = Entry( attributes, width = 10, justify = CENTER )
 intent.insert( 0, "0" )
 intent.grid( column = 2, row = 7 )
 
+#Synergies
+global syncounter #used to count the number of synergies activated
+syncounter=0
 group3toplabel = Label( synergies, text="Please pick only 10" )
-group3toplabel.pack()
+group3toplabel.grid( column = 1, row = 1 )
 
+#Item Bonuses
 group4toplabel = Label( bonuses, text="Triggered Bonuses" )
 group4toplabel.pack()
+
+#End of UI
 
 mainloop()
 
