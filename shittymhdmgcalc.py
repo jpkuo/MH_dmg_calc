@@ -4,7 +4,7 @@ import math
 from tkinter import *
 import tkinter as tk
 
-#root = Tk()
+#Base UI construction
 main = PanedWindow()
 main.pack(fill = BOTH, expand = 1)
 sec = PanedWindow(main, orient = VERTICAL )
