@@ -89,6 +89,58 @@ mlcrlab.grid( column = 1, row = 11 )
 mlecrit = Entry ( ratings, width = 5, justify = CENTER )
 mlecrit.insert( 0, "0" )
 mlecrit.grid( column = 2, row = 11 )
+#Ranged Crit Rating
+rngcrlab = Label( ratings, text="Ranged critical rating: " )
+rngcrlab.grid( column = 1, row = 12 )
+rngcrit = Entry( ratings, width = 5, justify = CENTER )
+rngcrit.insert( 0, "0" )
+rngcrit.grid( column = 2, row = 12 )
+#Area Crit Rating
+arecrlab = Label( ratings, text="Area critical rating: " )
+arecrlab.grid( column = 1, row = 13 )
+areacrit = Entry( ratings, width = 5, justify = CENTER )
+areacrit.insert( 0, "0" )
+areacrit.grid( column = 2, row = 13 )
+#Physical Crit Rating
+phscrlab = Label( ratings, text="Physical critical rating: " )
+phscrlab.grid( column = 1, row = 14 )
+physcrit = Entry( ratings, width = 5, justify = CENTER )
+physcrit.insert( 0, "0" )
+physcrit.grid( column = 2, row = 14 )
+#Energy Crit Rating
+nrgcrlab = Label( ratings, text="Energy critical rating: " )
+nrgcrlab.grid( column = 1, row = 15 )
+nrgcrit = Entry( ratings, width = 5, justify = CENTER )
+nrgcrit.insert( 0, "0" )
+nrgcrit.grid( column = 2, row = 15 )
+#Mental Crit Rating
+mencrlab = Label( ratings, text="Mental critical rating: " )
+mencrlab.grid(column = 1, row = 16 )
+mencrit = Entry( ratings, width = 5, justify = CENTER )
+mencrit.insert( 0, "0" )
+mencrit.grid(column = 2, row = 16 )
+#Space Creator
+spacecreated = Label( ratings, text=" " )
+spacecreated.grid( column = 1, row = 17)
+#Critical and Brutal Damage ratings
+#Critical Damage Rating
+cdrlab = Label( ratings, text="Critical damage rating: " )
+cdrlab.grid( column = 1, row = 18 )
+critdmg = Entry( ratings, width = 5, justify = CENTER )
+critdmg.insert( 0, "0" )
+critdmg.grid( column = 2, row = 18 )
+#Brutal Rating
+brtlab = Label( ratings, text="Brutal rating: " )
+brtlab.grid( column = 1, row = 19 )
+bruten = Entry( ratings, width = 5, justify = CENTER )
+bruten.insert( 0, "0" )
+bruten.grid( column = 2, row = 19 )
+#Brutal Damage Rating
+brtdmglab = Label( ratings, text="Brutal damage rating: " )
+brtdmglab.grid( column = 1, row = 20 )
+brutdmgen = Entry( ratings, width = 5, justify = CENTER )
+brutdmgen.insert( 0, "0" )
+brutdmgen.grid( column = 2, row = 20 )
 
 group2toplabel = Label( attributes, text="Enter your Character's Attributes" )
 group2toplabel.pack()
