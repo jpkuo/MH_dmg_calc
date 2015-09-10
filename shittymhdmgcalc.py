@@ -1,4 +1,5 @@
 #Marvel Heroes Calculator
+# Copyright (c) 2015 jpkuo 
 import io
 import math
 from tkinter import *
