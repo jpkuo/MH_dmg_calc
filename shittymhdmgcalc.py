@@ -3,7 +3,6 @@
 import io
 import math
 from tkinter import *
-import tkinter as tk
 
 #Base UI construction
 main = PanedWindow()
@@ -196,7 +195,6 @@ group3toplabel.grid( column = 1, row = 1 )
 group4toplabel = Label( bonuses, text="Triggered Bonuses" )
 group4toplabel.pack()
 
-#End of UI
 
 mainloop()
 
