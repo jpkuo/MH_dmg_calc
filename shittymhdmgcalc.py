@@ -188,8 +188,71 @@ intent.grid( column = 2, row = 7 )
 #Synergies
 global syncounter #used to count the number of synergies activated
 syncounter=0
+
+def synup(x):
+    
+    syncounter = syncounter + 1
+    if syncounter >= 10:
+        syncounter = syncounter - 1
+        x.deselect()
+    
+
 group3toplabel = Label( synergies, text="Please pick only 10" )
 group3toplabel.grid( column = 1, row = 1 )
+#Ant-Man
+amsyn=IntVar()
+one = Checkbutton()
+one = Checkbutton( synergies, text="Ant-Man", variable=amsyn, command=synup(one))
+#Black Panther
+#Black Widow
+#Cable
+#Captain America
+#Colossus
+#cyclops
+#Daredevil
+#Deadpool
+#Doctor Strange
+#Dr. Doom
+#Emma Frost
+#Gambit
+#Ghost Rider
+#Hawkeye
+#Hulk
+#Human Torch
+#Iceman
+#Invisible Woman
+#Iron Man
+#Jean Grey
+#Juggernaut
+#Loki
+#Luke Cage
+#Magneto
+#Moon Knight
+#Mr. Fantastic
+#Ms. Marvel
+#Nightcrawler
+#Nova
+#Psylocke
+#Punisher
+#Rocket Raccoon
+#Rogue
+#Scarlet Witch
+#She-Hulk
+#Silver Surfer
+#Spider-Man
+#Squirrel Girl
+#Star-Lord
+#Storm
+#Taskmaster
+#Thing
+#Thor
+#Venom
+#Vision
+#Warmachine
+#Winter Soldier
+#Wolverine
+#X-23
+
 
 #Item Bonuses
 group4toplabel = Label( bonuses, text="Triggered Bonuses" )
