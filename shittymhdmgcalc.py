@@ -186,30 +186,116 @@ intent.insert( 0, "0" )
 intent.grid( column = 2, row = 7 )
 
 #Synergies
-global syncounter #used to count the number of synergies activated
-syncounter=0
+syncounter=0 #used to count the number of synergies activated
+#syncounter=0
+
+'''
+SYNERGIES = [
+    ("1", "antman"),
+    ("2", "blackpanther"),
+    ("3", "blackwidow"),
+    ("4", "cable"),
+    ("5", "america"),
+    ("6", "colussus"),
+    ("7", "cyclops"),
+    ("8", "daredevil"),
+    ("9", "deadpool"),
+    ("10", "strange"),
+    ("11", "doom"),
+    ("12", "emma"),
+    ("13", "gambit"),
+    ("14", "ghostrider"),
+    ("15", "hawkeye"),
+    ("16", "hulk"),
+    ("17", "torch"),
+    ("18", "iceman"),
+    ("19", "suestorm"),
+    ("20", "ironman"),
+    ("21", "phoenix"),
+    ("22", "juggy"),
+    ("23", "loki"),
+    ("24", "lukecage"),
+    ("25", "magneto"),
+    ("26", "moonie"),
+    ("27", "stretch"), 
+    ("28", "carol"),
+    ("29", "kurt"),
+    ("30", "nova"),
+    ("31", "betsy"),
+    ("32", "punisher"),
+    ("33", "rocket"),
+    ("34", "rogue"),
+    ("35", "wanda"),
+    ("36", "shulk"),
+    ("37", "surfer"),
+    ("38", "spidey"),
+    ("39", "doreen"),
+    ("40", "starlord"),
+    ("41", "storm"),
+    ("42", "tasky"),
+    ("43", "thing"),
+    ("44", "thor"),
+    ("45", "venom"),
+    ("46", "vision"),
+    ("47", "warmachine"),
+    ("48", "bucky"),
+    ("49", "logan"),
+    ("50", "x23"),
+]
+
+def synarraycheck(x):
+    print(x)
+    for number, button in SYNERGIES:
+        if number == x:
+            return(button)
 
 def synup(x):
-    
+    blurp = x
+    global syncounter
     syncounter = syncounter + 1
+    blap = synarraycheck(blurp)
+    print(blap)
     if syncounter >= 10:
         syncounter = syncounter - 1
-        x.deselect()
-    
+'''
 
-group3toplabel = Label( synergies, text="Please pick only 10" )
-group3toplabel.grid( column = 1, row = 1 )
+def synup(x): #placekeeper
+    print(x)
+
+group3toplabel=Label(synergies, text="Please pick only 10")
+group3toplabel.grid(column=1, row=1)
 #Ant-Man
 amsyn=IntVar()
-one = Checkbutton()
-one = Checkbutton( synergies, text="Ant-Man", variable=amsyn, command=synup(one))
+antman=Checkbutton(synergies, text="Ant-Man", variable=amsyn, command=synup(1))
+antman.grid(column=1, row=2, sticky=W)
 #Black Panther
+bpsyn=IntVar()
+blackpanther=Checkbutton(synergies, text="Black Panther", variable=bpsyn, command=synup(2))
+blackpanther.grid(column=2, row=2, sticky=W)
 #Black Widow
+bwsyn=IntVar()
+blackwidow=Checkbutton(synergies, text="Black Widow", variable=bwsyn, command=synup(3))
+blackwidow.grid(column=1, row=3, sticky=W)
 #Cable
+cblsyn=IntVar()
+cable=Checkbutton(synergies, text="Cable", variable=cblsyn, command=synup(4))
+cable.grid(column=2, row=3, sticky=W)
 #Captain America
+cptsyn=IntVar()
+america=Checkbutton(synergies, text="Captain America", variable=cptsyn, command=synup(5))
+america.grid(column=1, row=4, sticky=W)
 #Colossus
+colsyn=IntVar()
+colossus=Checkbutton(synergies, text="Colossus", variable=colsyn, command=synup(6))
+colossus.grid(column=2, row=4, sticky=W)
 #cyclops
+cycsyn=IntVar()
+cyclops=Checkbutton(synergies, text="Cyclops", variable=cycsyn, command=synup(7))
+cyclops.grid(column=1, row=5, sticky=W)
 #Daredevil
+ddsyn=IntVar()
+daredevil=Checkbutton(synergies, text="Daredevil", variable=ddsyn, command=synup(8))
+daredevil.grid(column=2, row=5, sticky=W)
 #Deadpool
 #Doctor Strange
 #Dr. Doom
