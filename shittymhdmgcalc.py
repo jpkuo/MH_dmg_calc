@@ -240,7 +240,7 @@ SYNERGIES = [
     ("47", "warmachine"),
     ("48", "bucky"),
     ("49", "logan"),
-    ("50", "x23"),
+    ("50", "laura"),
 ]
 
 def synarraycheck(x):
@@ -297,48 +297,173 @@ ddsyn=IntVar()
 daredevil=Checkbutton(synergies, text="Daredevil", variable=ddsyn, command=synup(8))
 daredevil.grid(column=2, row=5, sticky=W)
 #Deadpool
+dpsyn=IntVar()
+deadpool=Checkbutton(synergies, text="Deadpool", variable=dpsyn, command=synup(9))
+deadpool.grid(column=1, row=6, sticky=W)
 #Doctor Strange
+drssyn=IntVar()
+strange=Checkbutton(synergies, text="Dr. Strange", variable=drssyn, command=synup(10))
+strange.grid(column=2, row=6, sticky=W)
 #Dr. Doom
+drdsyn=IntVar()
+doom=Checkbutton(synergies, text="Dr. Doom", variable=drdsyn, command=synup(11))
+doom.grid(column=1, row=7, sticky=W)
 #Emma Frost
+efsyn=IntVar()
+emma=Checkbutton(synergies, text="Emma Frost", variable=efsyn, command=synup(12))
+emma.grid(column=2, row=7, sticky=W)
 #Gambit
+gbtsyn=IntVar()
+gambit=Checkbutton(synergies, text="Gambit", variable=gbtsyn, command=synup(13))
+gambit.grid(column=1, row=8, sticky=W)
 #Ghost Rider
+grsyn=IntVar()
+ghostrider=Checkbutton(synergies, text="Ghost rider", variable=grsyn, command=synup(14))
+ghostrider.grid(column=2, row=8, sticky=W)
 #Hawkeye
+hawksyn=IntVar()
+hawkeye=Checkbutton(synergies, text="Hawkeye", variable=hawksyn, command=synup(15))
+hawkeye.grid(column=1, row=9, sticky=W)
 #Hulk
+hulksyn=IntVar()
+hulk=Checkbutton(synergies, text="Hulk", variable=hulksyn, command=synup(16))
+hulk.grid(column=2, row=9, sticky=W)
 #Human Torch
+torchsyn=IntVar()
+torch=Checkbutton(synergies, text="Human Torch", variable=torchsyn, command=synup(17))
+torch.grid(column=1, row=10, sticky=W)
 #Iceman
+icesyn=IntVar()
+iceman=Checkbutton(synergies, text="Iceman", variable=icesyn, command=synup(18))
+iceman.grid(column=2, row=10, sticky=W)
 #Invisible Woman
+iwsyn=IntVar()
+suestorm=Checkbutton(synergies, text="Invisible Woman", variable=iwsyn, command=synup(19))
+suestorm.grid(column=1, row=11, sticky=W)
 #Iron Man
+imsyn=IntVar()
+ironman=Checkbutton(synergies, text="Iron Man", variable=imsyn, command=synup(20))
+ironman.grid(column=2, row=11, sticky=W)
 #Jean Grey
+jgsyn=IntVar()
+phoenix=Checkbutton(synergies, text="Jean Grey", variable=jgsyn, command=synup(21))
+phoenix.grid(column=1, row=12, sticky=W)
 #Juggernaut
+jugsyn=IntVar()
+juggy=Checkbutton(synergies, text="Juggernaut", variable=jugsyn, command=synup(22))
+juggy.grid(column=2, row=12, sticky=W)
 #Loki
+lokisyn=IntVar()
+loki=Checkbutton(synergies, text="Loki", variable=lokisyn, command=synup(23))
+loki.grid(column=1, row=13, sticky=W)
 #Luke Cage
+lukesyn=IntVar()
+lukecage=Checkbutton(synergies, text="Luke Cage", variable=lukesyn, command=synup(24))
+lukecage.grid(column=2, row=13, sticky=W)
 #Magneto
+magsyn=IntVar()
+magneto=Checkbutton(synergies, text="Magneto", variable=magsyn, command=synup(25))
+magneto.grid(column=1, row=14, sticky=W)
 #Moon Knight
+mksyn=IntVar()
+moonie=Checkbutton(synergies, text="Moon Knight", variable=mksyn, command=synup(26))
+moonie.grid(column=2, row=14, sticky=W)
 #Mr. Fantastic
+mrfsyn=IntVar()
+stretch=Checkbutton(synergies, text="Mr. Fantastic", variable=mrfsyn, command=synup(27))
+stretch.grid(column=1, row=15, sticky=W)
 #Ms. Marvel
+msmsyn=IntVar()
+carol=Checkbutton(synergies, text="Ms. Marvel", variable=msmsyn, command=synup(28))
+carol.grid(column=2, row=15, sticky=W)
 #Nightcrawler
+ncsyn=IntVar()
+kurt=Checkbutton(synergies, text="Nightcrawler", variable=ncsyn, command=synup(29))
+kurt.grid(column=1, row=16, sticky=W)
 #Nova
+novasyn=IntVar()
+nova=Checkbutton(synergies, text="Nova", variable=novasyn, command=synup(30))
+nova.grid(column=2, row=16, sticky=W)
 #Psylocke
+psysyn=IntVar()
+betsy=Checkbutton(synergies, text="Psylocke", variable=psysyn, command=synup(31))
+betsy.grid(column=1, row=17, sticky=W)
 #Punisher
+punsyn=IntVar()
+punisher=Checkbutton(synergies, text="Punisher", variable=punsyn, command=synup(32))
+punisher.grid(column=2, row=17, sticky=W)
 #Rocket Raccoon
+rrsyn=IntVar()
+rocket=Checkbutton(synergies, text="Rocket Raccoon", variable=rrsyn, command=synup(33))
+rocket.grid(column=1, row=18, sticky=W)
 #Rogue
+roguesyn=IntVar()
+rogue=Checkbutton(synergies, text="Rogue", variable=roguesyn, command=synup(34))
+rogue.grid(column=2, row=18, sticky=W)
 #Scarlet Witch
+swsyn=IntVar()
+wanda=Checkbutton(synergies, text="Scarlet Witch", variable=swsyn, command=synup(35))
+wanda.grid(column=1, row=19, sticky=W)
 #She-Hulk
+shsyn=IntVar()
+shulk=Checkbutton(synergies, text="She-Hulk", variable=shsyn, command=synup(36))
+shulk.grid(column=2, row=19, sticky=W)
 #Silver Surfer
+sssyn=IntVar()
+surfer=Checkbutton(synergies, text="Silver Surfer", variable=sssyn, command=synup(37))
+surfer.grid(column=1, row=20, sticky=W)
 #Spider-Man
+spideysyn=IntVar()
+spidey=Checkbutton(synergies, text="Spider-man", variable=spideysyn, command=synup(38))
+spidey.grid(column=2, row=20, sticky=W)
 #Squirrel Girl
+sqgsyn=IntVar()
+doreen=Checkbutton(synergies, text="Squirrel Girl", variable=sqgsyn, command=synup(39))
+doreen.grid(column=1, row=21, sticky=W)
 #Star-Lord
+starsyn=IntVar()
+starlord=Checkbutton(synergies, text="Star Lord", variable=starsyn, command=synup(40))
+starlord.grid(column=2, row=21, sticky=W)
 #Storm
+stormsyn=IntVar()
+storm=Checkbutton(synergies, text="Storm", variable=stormsyn, command=synup(41))
+storm.grid(column=1, row=22, sticky=W)
 #Taskmaster
+tmsyn=IntVar()
+tasky=Checkbutton(synergies, text="Taskmaster", variable=tmsyn, command=synup(42))
+tasky.grid(column=2, row=22, sticky=W)
 #Thing
+thingsyn=IntVar()
+thing=Checkbutton(synergies, text="Taskmaster", variable=thingsyn, command=synup(43))
+thing.grid(column=1, row=23, sticky=W)
 #Thor
+thorsyn=IntVar()
+thor=Checkbutton(synergies, text="Thor", variable=thorsyn, command=synup(44))
+thor.grid(column=2, row=23, sticky=W)
 #Venom
+venomsyn=IntVar()
+venom=Checkbutton(synergies, text="Venom", variable=venomsyn, command=synup(45))
+venom.grid(column=1, row=24, sticky=W)
 #Vision
+visionsyn=IntVar()
+vision=Checkbutton(synergies, text="Vision", variable=visionsyn, command=synup(46))
+vision.grid(column=2, row=24, sticky=W)
 #Warmachine
+wmsyn=IntVar()
+warmachine=Checkbutton(synergies, text="Warmachine", variable=wmsyn, command=synup(47))
+warmachine.grid(column=1, row=25, sticky=W)
 #Winter Soldier
+wssyn=IntVar()
+bucky=Checkbutton(synergies, text="Winter Soldier", variable=wssyn, command=synup(48))
+bucky.grid(column=2, row=25, sticky=W)
 #Wolverine
+wolvsyn=IntVar()
+logan=Checkbutton(synergies, text="Wolverine", variable=wolvsyn, command=synup(49))
+logan.grid(column=1, row=26, sticky=W)
 #X-23
-
+x23syn=IntVar()
+laura=Checkbutton(synergies, text="X-23", variable=x23syn, command=synup(50))
+laura.grid(column=2, row=26, sticky=W)
 
 #Item Bonuses
 group4toplabel = Label( bonuses, text="Triggered Bonuses" )
